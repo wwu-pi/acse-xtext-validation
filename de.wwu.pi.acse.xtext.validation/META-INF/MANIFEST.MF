@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: de.wwu.pi.acse.xtext.validation
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: de.wwu.pi.acse.xtext.validation; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.eclipse.emf.ecore,
+ org.eclipse.xtext.xbase.lib,
+ org.antlr.runtime,
+ org.eclipse.xtext.util,
+ org.eclipse.xtend.lib,
+ org.eclipse.emf.common
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: de.wwu.pi.acse.xtext.validationexample,
+ de.wwu.pi.acse.xtext.validationexample.valDsl,
+ de.wwu.pi.acse.xtext.validationexample.parser.antlr.internal,
+ de.wwu.pi.acse.xtext.validationexample.validation,
+ de.wwu.pi.acse.xtext.validationexample.scoping,
+ de.wwu.pi.acse.xtext.validationexample.valDsl.impl,
+ de.wwu.pi.acse.xtext.validationexample.generator,
+ de.wwu.pi.acse.xtext.validationexample.services,
+ de.wwu.pi.acse.xtext.validationexample.valDsl.util,
+ de.wwu.pi.acse.xtext.validationexample.serializer,
+ de.wwu.pi.acse.xtext.validationexample.parser.antlr
+Import-Package: org.apache.log4j

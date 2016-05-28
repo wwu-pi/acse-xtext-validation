@@ -1,0 +1,15 @@
+grammar de.wwu.pi.acse.xtext.validationexample.ValDsl with org.eclipse.xtext.common.Terminals
+
+generate valDsl "http://www.wwu.de/pi/acse/xtext/validationexample/ValDsl"
+
+Model:
+	entities+=Entity*;
+	
+Entity:
+	'Entity' '{' 'Name:' name=ID ','
+				 'Visibility:' visibility=Visibility
+				 (',' 'Super:' superEntity=[Entity])?	 	
+			'}';
+
+enum Visibility:
+    PUBLIC='public' | PRIVATE='private' | PROTECTED='protected';

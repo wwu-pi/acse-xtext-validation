@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: de.wwu.pi.acse.xtext.validation.ide
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: de.wwu.pi.acse.xtext.validation.ide; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: de.wwu.pi.acse.xtext.validation,
+ org.eclipse.xtext.ide,
+ org.eclipse.xtext.xbase.ide
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: de.wwu.pi.acse.xtext.validationexample.ide.contentassist.antlr.internal,
+ de.wwu.pi.acse.xtext.validationexample.ide.contentassist.antlr
+

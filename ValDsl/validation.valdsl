@@ -1,0 +1,10 @@
+Entity {
+	Name: MyEntity,
+	Visibility: protected
+}
+
+Entity {
+	Name: MySubEntity,
+	Visibility: protected,
+	Super: MyEntity
+}
